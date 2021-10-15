@@ -11,6 +11,7 @@
 // import { Component10} from "./components/Component10";
 // import { Counter } from "./components/Prac/Counter";
 // import { Input } from "./components/Prac/Input";
+import ClassCount from "./components/ClassComponent/ClassCounter";
 import { Button2} from "./components/Prac/Button";
 function App() {
   // const mystyle={
@@ -18,6 +19,7 @@ function App() {
   // };
   return (
     <div>
+      <ClassCount/>
       <Button2/>
     </div>
     // <div>
