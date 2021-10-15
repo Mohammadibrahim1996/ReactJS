@@ -20,6 +20,7 @@ function App() {
   return (
     <div>
       <ClassCount/>
+      <br />
       <Button2/>
     </div>
     // <div>

@@ -4,20 +4,25 @@ import React, { Component} from "react";
       super(props);
       this.state={count:0};
   }
-  handleIncrement=()=>{
-        this.setState((prevState)=>({count:prevState.count+1}))
-  };
-  handleDecrement=()=>{
-      this.setState((prevState)=>({count:prevState.count-1}))
-  };
+//   handleIncrement=()=>{
+//         this.setState((prevState)=>({count:prevState.count+1}))
+//   };
+// //   handleDecrement=()=>{
+//       this.setState((prevState)=>({count:prevState.count-1}))
+//   };
+//   handleReset=()=>{
+//       this.setState((prevState)=>({count:prevState.count*0}))
+//   }
+ 
   render(){
       return(
           <div>
               <h1> Class Component Counter</h1>
               <h4>Count:{this.state.count}
               </h4>
-            <button onClick={()=> this.state.count <= 9&& this.handleIncrement()}>increament</button>
-            <button onClick={()=> this.state.count >  0 && this.handleDecrement()}>Decreament</button>
+            <button onClick={()=> this.state.count <= 9 && this.setState((prevState)=>({count:prevState.count+1}))}>increament</button>
+            <button onClick={()=> this.state.count >  0 && this.setState((prevState)=>({count:prevState.count-1}))}>Decreament</button>
+            <button onClick={()=> this.setState((prevState)=>({count:prevState.count*0}))}>Reset</button>
 
           </div>
       )
