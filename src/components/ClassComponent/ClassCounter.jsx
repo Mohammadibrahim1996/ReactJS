@@ -20,8 +20,8 @@ import React, { Component} from "react";
               <h1> Class Component Counter</h1>
               <h4>Count:{this.state.count}
               </h4>
-            <button onClick={()=> this.state.count <= 9 && this.setState((prevState)=>({count:prevState.count+1}))}>increament</button>
-            <button onClick={()=> this.state.count >  0 && this.setState((prevState)=>({count:prevState.count-1}))}>Decreament</button>
+            <button onClick={()=> this.setState((prevState)=>({count:prevState.count+1}))} disabled={this.state.count<=10}>increament</button>
+            <button onClick={()=> this.setState((prevState)=>({count:prevState.count-1}))} disabled={this.state.count >  0}>Decreament</button>
             <button onClick={()=> this.setState((prevState)=>({count:prevState.count*0}))}>Reset</button>
 
           </div>
