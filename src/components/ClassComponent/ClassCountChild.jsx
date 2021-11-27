@@ -12,7 +12,6 @@ export class ClassCountChild extends Component{
               <button onClick={this.props.CountIncrement}>Increment</button>
               <button onClick={this.props.CountDecrement}>Decrement</button>
               <button onClick={this.props.CountReset}>Reset</button>
-              <button>rese\<table></table></button>
 
             </div>
         )
